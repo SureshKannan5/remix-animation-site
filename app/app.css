@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "circular-web";
+  font-style: normal;
+  font-display: swap;
+  src: url("/fonts/circularweb-book.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "general";
+  font-display: swap;
+  src: url("/fonts/general.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "zentry-regular";
+  font-display: swap;
+  src: url("/fonts/zentry-regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "robert-medium";
+  font-display: swap;
+  src: url("/fonts/robert-medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "robert-regular";
+  font-display: swap;
+  src: url("/fonts/robert-regular.woff2") format("woff2");
+}
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-zentry: "zentry-regular", sans-serif;
+  --font-general: "general", sans-serif;
+  --font-circular-web: "circular-web", sans-serif;
+  --font-robert-medium: "robert-medium", sans-serif;
+  --font-robert-regular: "robert-regular", sans-serif;
+  --color-blue-50: #dfdff0;
+  --color-blue-75: #dfdff2;
+  --color-blue-100: #f0f2fa;
+  --color-blue-200: #010101;
+  --color-blue-300: #4fb7dd;
+  --color-violet-300: #5724ff;
+  --color-yellow-100: #8e983f;
+  --color-yellow-300: #edff66;
+}
+
+html,
+body {
+  width: 100dvw;
+  background-color: #dfdfdf;
+  overflow-x: hidden;
+  @apply dark:bg-black;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: dark;
+  }
+}
